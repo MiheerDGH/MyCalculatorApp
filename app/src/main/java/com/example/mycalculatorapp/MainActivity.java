@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        public void addNums(View view){
+        public void addNums(View Object view){
             EditText editText = findViewById(R.id.editTextTextPersonName);
             EditText editText2 = findViewById(R.id.editTextTextPersonName2);
 
