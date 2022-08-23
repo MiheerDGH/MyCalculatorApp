@@ -19,10 +19,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        public void addNums(View Object view){
-            EditText editText = findViewById(R.id.editTextTextPersonName);
-            EditText editText2 = findViewById(R.id.editTextTextPersonName2);
 
-        }
+    }
+    public void addNums(View view){
+        EditText editNum = findViewById(R.id.firstNumber);
+        EditText editNum2 = findViewById(R.id.secondNumber);
+        TextView numberSumTV = findViewById(R.id.answer);
+
+        int num1 = Integer.parseInt(editNum.getText().toString());
+        int num2 = Integer.parseInt(editNum2.getText().toString());
+        int sum = num1 + num2;
+        numberSumTV.setText("" + sum);
+
     }
 }
