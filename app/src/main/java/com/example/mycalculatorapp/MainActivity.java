@@ -26,11 +26,10 @@ public class MainActivity extends AppCompatActivity {
         EditText editNum2 = findViewById(R.id.secondNumber);
         TextView numberSumTV = findViewById(R.id.answer);
         // disappears the text when clicked on
-        editNum.setVisibility(TextView.GONE);
-        editNum2.setVisibility(TextView.GONE);
-        int num1 = Integer.parseInt(editNum.getText().toString());
-        int num2 = Integer.parseInt(editNum2.getText().toString());
-        int sum = num1 + num2;
+
+        double num1 = Double.parseDouble(editNum.getText().toString());
+        double num2 = Double.parseDouble(editNum2.getText().toString());
+        double sum = num1 + num2;
 
         numberSumTV.setText("" + sum);
 
@@ -40,11 +39,9 @@ public class MainActivity extends AppCompatActivity {
         EditText editNum2 = findViewById(R.id.secondNumber);
         TextView numberSumTV = findViewById(R.id.answer);
         // disappears the text when clicked on
-        editNum.setVisibility(TextView.GONE);
-        editNum2.setVisibility(TextView.GONE);
-        int num1 = Integer.parseInt(editNum.getText().toString());
-        int num2 = Integer.parseInt(editNum2.getText().toString());
-        int diff = num1 - num2;
+        double num1 = Double.parseDouble(editNum.getText().toString());
+        double num2 = Double.parseDouble(editNum2.getText().toString());
+        double diff = num1 - num2;
 
         numberSumTV.setText("" + diff);
 
@@ -54,13 +51,24 @@ public class MainActivity extends AppCompatActivity {
         EditText editNum2 = findViewById(R.id.secondNumber);
         TextView numberSumTV = findViewById(R.id.answer);
         // disappears the text when clicked on
-        editNum.setVisibility(TextView.GONE);
-        editNum2.setVisibility(TextView.GONE);
-        int num1 = Integer.parseInt(editNum.getText().toString());
-        int num2 = Integer.parseInt(editNum2.getText().toString());
-        int product = num1 * num2;
+
+        double num1 = Double.parseDouble(editNum.getText().toString());
+        double num2 = Double.parseDouble(editNum2.getText().toString());
+        double product = num1 * num2;
 
         numberSumTV.setText("" + product);
+
+    }
+    public void divNums(View view){
+        EditText editNum = findViewById(R.id.firstNumber);
+        EditText editNum2 = findViewById(R.id.secondNumber);
+        TextView numberSumTV = findViewById(R.id.answer);
+        double num1 = Double.parseDouble(editNum.getText().toString());
+        double num2 = Double.parseDouble(editNum2.getText().toString());
+        // makes the quotient of num1 / num2 into a decimal
+        double quotient = num1 / num2;
+
+        numberSumTV.setText("" + quotient);
 
     }
 }
