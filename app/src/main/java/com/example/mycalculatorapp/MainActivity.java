@@ -71,4 +71,19 @@ public class MainActivity extends AppCompatActivity {
         numberSumTV.setText("" + quotient);
 
     }
+    public void factorial(View view){
+        EditText editNum = findViewById(R.id.firstNumber);
+        TextView numberSumTV = findViewById(R.id.answer);
+        double num1 = Double.parseDouble(editNum.getText().toString());
+        // makes the quotient of num1 / num2 into a decimal
+        int numb1 = editNum.length();
+        int facto = 1;
+        for(int i = numb1; i > 1; i--){
+            facto *= i;
+            numb1--;
+        }
+
+        numberSumTV.setText("" + facto);
+
+    }
 }

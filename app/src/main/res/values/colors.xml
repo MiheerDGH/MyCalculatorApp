@@ -10,4 +10,6 @@
     <color name="cyan">#FFFFFF00</color>
     <color name ="reddish">#FFF34765</color>
     <color name ="lightpurple">#FFFF37FF</color>
+    <color name ="blue">#FF0037FF</color>
+    <color name ="green">#19DF33</color>
 </resources>
