@@ -13,6 +13,7 @@
         android:layout_height="42dp"
         android:autoText="false"
         android:ems="10"
+        android:background="@color/white"
         android:hint="FirstNum: "
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,11 +25,12 @@
 
     <EditText
         android:id="@+id/secondNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="176dp"
+        android:layout_height="42dp"
         android:ems="10"
-        android:inputType="number"
+        android:background="@color/white"
         android:hint="SecondNum:"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -38,18 +40,17 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="81dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="84dp"
+        android:layout_width="84dp"
+        android:layout_height="58dp"
         android:background="@color/reddish"
         android:onClick="addNums"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/firstNumber"
-        app:layout_constraintVertical_bias="0.005" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
 
     <Button
         android:id="@+id/button2"
@@ -60,40 +61,39 @@
         android:text="-"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.729"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/secondNumber"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="84dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="276dp"
+        android:layout_height="58dp"
         android:background="@color/lightpurple"
         android:onClick="multNums"
         android:text="x"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.862" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="93dp"
-        android:layout_height="51dp"
+        android:layout_width="84dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="53dp"
         android:background="@color/lightpurple"
         android:onClick="divNums"
         android:text="÷"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
 
     <EditText
         android:id="@+id/answer"
@@ -101,6 +101,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,14 +113,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/green"
-        android:onClick=""
+        android:onClick="factorial"
         android:text="!Factorial!"
         app:layout_constraintBottom_toTopOf="@+id/answer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.742" />
+        app:layout_constraintVertical_bias="0.697" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

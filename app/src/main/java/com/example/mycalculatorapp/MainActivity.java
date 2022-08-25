@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         EditText editNum = findViewById(R.id.firstNumber);
         EditText editNum2 = findViewById(R.id.secondNumber);
         TextView numberSumTV = findViewById(R.id.answer);
-        // disappears the text when clicked on
 
         double num1 = Double.parseDouble(editNum.getText().toString());
         double num2 = Double.parseDouble(editNum2.getText().toString());
@@ -72,16 +71,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void factorial(View view){
+        
         EditText editNum = findViewById(R.id.firstNumber);
         TextView numberSumTV = findViewById(R.id.answer);
         double num1 = Double.parseDouble(editNum.getText().toString());
-        // makes the quotient of num1 / num2 into a decimal
-        int numb1 = editNum.length();
         int facto = 1;
-        for(int i = numb1; i > 1; i--){
-            facto *= i;
-            numb1--;
+        while(num1 > 0){
+            facto *= num1;
+            num1--;
         }
+
 
         numberSumTV.setText("" + facto);
 
