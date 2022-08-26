@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-
+// 2 numbers must be inputted at the beginning
 
 
     @Override
@@ -24,8 +24,10 @@ public class MainActivity extends AppCompatActivity {
     public void addNums(View view){
         EditText editNum = findViewById(R.id.firstNumber);
         EditText editNum2 = findViewById(R.id.secondNumber);
+        // allows the second input box to stay visible when addition button is pressed
+        editNum2.setVisibility(View.VISIBLE);
         TextView numberSumTV = findViewById(R.id.answer);
-        // disappears the text when clicked on
+
 
         double num1 = Double.parseDouble(editNum.getText().toString());
         double num2 = Double.parseDouble(editNum2.getText().toString());
@@ -37,8 +39,9 @@ public class MainActivity extends AppCompatActivity {
     public void diffNums(View view){
         EditText editNum = findViewById(R.id.firstNumber);
         EditText editNum2 = findViewById(R.id.secondNumber);
+        // allows the second input box to stay visible when subtraction button is pressed
+        editNum2.setVisibility(View.VISIBLE);
         TextView numberSumTV = findViewById(R.id.answer);
-        // disappears the text when clicked on
         double num1 = Double.parseDouble(editNum.getText().toString());
         double num2 = Double.parseDouble(editNum2.getText().toString());
         double diff = num1 - num2;
@@ -49,7 +52,13 @@ public class MainActivity extends AppCompatActivity {
     public void multNums(View view){
         EditText editNum = findViewById(R.id.firstNumber);
         EditText editNum2 = findViewById(R.id.secondNumber);
+        // allows the second input box to stay visible when addition button is pressed
+        editNum2.setVisibility(View.VISIBLE);
         TextView numberSumTV = findViewById(R.id.answer);
+
+
+
+
 
         double num1 = Double.parseDouble(editNum.getText().toString());
         double num2 = Double.parseDouble(editNum2.getText().toString());
@@ -61,7 +70,10 @@ public class MainActivity extends AppCompatActivity {
     public void divNums(View view){
         EditText editNum = findViewById(R.id.firstNumber);
         EditText editNum2 = findViewById(R.id.secondNumber);
+        // allows the second input box to stay visible when addition button is pressed
+        editNum2.setVisibility(View.VISIBLE);
         TextView numberSumTV = findViewById(R.id.answer);
+
         double num1 = Double.parseDouble(editNum.getText().toString());
         double num2 = Double.parseDouble(editNum2.getText().toString());
         // makes the quotient of num1 / num2 into a decimal
@@ -73,9 +85,11 @@ public class MainActivity extends AppCompatActivity {
     public void factorial(View view){
         
         EditText editNum = findViewById(R.id.firstNumber);
+        TextView editNum2 = findViewById(R.id.secondNumber);
         TextView numberSumTV = findViewById(R.id.answer);
+        editNum2.setVisibility(View.GONE);
         double num1 = Double.parseDouble(editNum.getText().toString());
-        int facto = 1;
+        double facto = 1;
         while(num1 > 0){
             facto *= num1;
             num1--;
